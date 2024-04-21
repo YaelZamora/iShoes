@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CartTab.swift
 //  iShoes
 //
 //  Created by Yael Javier Zamora Moreno on 20/04/24.
@@ -7,15 +7,12 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    
+struct CartTab: View {
     var body: some View {
-        NavigationStack {
-            HomeView()
-        }
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    ContentView()
+    CartTab()
 }
