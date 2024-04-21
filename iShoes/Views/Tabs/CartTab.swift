@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct CartTab: View {
+    let precios = [430, 593, 123, 423, 414, 103, 130, 103, 142, 304, 800]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Form {
+            Section(header: Text("Productos")) {
+                ForEach(precios, id: \.self) {index in
+                    NavigationLink {
+                        DetailProductView()
+                    } label: {
+                        Text("Zapato de: $\(index)")
+                    }
+                }
+                
+                NavigationLink("Checkout") {
+                    //
+                }
+            }
+        }
     }
 }
 
